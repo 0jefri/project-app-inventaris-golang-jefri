@@ -1,0 +1,376 @@
+{
+	"info": {
+		"_postman_id": "2559cef6-9f0c-44e7-9a5c-e0c2626dc2c0",
+		"name": "Inventaris Office",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30073030"
+	},
+	"item": [
+		{
+			"name": "Add Category",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJJbnZlbnRhcmlzIiwiZXhwIjoxNzMxMTczMjk2LCJpYXQiOjE3MzExNjk2OTYsIlVzZXJuYW1lIjoiamVmcmkifQ.PomAoKtMSlN8vhUzzrbLIIYzUyI5owOnhL6x5Vo-ZtA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"Elektronik\",\n    \"description\" : \"alat-alat Elektronik\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/inventaris/users/category",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"inventaris",
+						"users",
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Category",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJJbnZlbnRhcmlzIiwiZXhwIjoxNzMxMTczOTcxLCJpYXQiOjE3MzExNzAzNzEsIlVzZXJuYW1lIjoiamVmcmkifQ.wNsumdL5wv2gr24S2Bw7QzzKYUgukIgrulrpCC3En7s",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/inventaris/users/category/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"inventaris",
+						"users",
+						"category",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Category ID",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJJbnZlbnRhcmlzIiwiZXhwIjoxNzMxMTczOTcxLCJpYXQiOjE3MzExNzAzNzEsIlVzZXJuYW1lIjoiamVmcmkifQ.wNsumdL5wv2gr24S2Bw7QzzKYUgukIgrulrpCC3En7s",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/category/68dac652-c973-4ae2-a019-80394809f637",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"category",
+						"68dac652-c973-4ae2-a019-80394809f637"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Category",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJJbnZlbnRhcmlzIiwiZXhwIjoxNzMxMTczOTcxLCJpYXQiOjE3MzExNzAzNzEsIlVzZXJuYW1lIjoiamVmcmkifQ.wNsumdL5wv2gr24S2Bw7QzzKYUgukIgrulrpCC3En7s",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"limbah\",\n    \"description\" : \"Update elektronik category\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/category/da00b7e9-d6c5-4465-8ac1-ad2a22be8485",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"category",
+						"da00b7e9-d6c5-4465-8ac1-ad2a22be8485"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Category",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJJbnZlbnRhcmlzIiwiZXhwIjoxNzMxMTczOTcxLCJpYXQiOjE3MzExNzAzNzEsIlVzZXJuYW1lIjoiamVmcmkifQ.wNsumdL5wv2gr24S2Bw7QzzKYUgukIgrulrpCC3En7s",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/category/468f356e-0901-4235-838b-8fbf05492c9b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"category",
+						"468f356e-0901-4235-838b-8fbf05492c9b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get item list",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "create item",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "gelang",
+							"type": "text"
+						},
+						{
+							"key": "category_id",
+							"value": "da00b7e9-d6c5-4465-8ac1-ad2a22be8485",
+							"type": "text"
+						},
+						{
+							"key": "photo_url",
+							"value": "rokok.jpg",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "1000000",
+							"type": "text"
+						},
+						{
+							"key": "purchase_date",
+							"value": "2022-05-10T00:00:00Z",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/items",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get item id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/items/f7a79a27-58bc-4ef9-aa2f-9cfd2b665374",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"items",
+						"f7a79a27-58bc-4ef9-aa2f-9cfd2b665374"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Item",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "televisi",
+							"type": "text"
+						},
+						{
+							"key": "category_id",
+							"value": "da00b7e9-d6c5-4465-8ac1-ad2a22be8485",
+							"type": "text"
+						},
+						{
+							"key": "photo_url",
+							"value": "image",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "1233333",
+							"type": "text"
+						},
+						{
+							"key": "purchase_date",
+							"value": "2021-09-19",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/items/4fc21fac-098b-4881-b368-9446831f7baf",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"items",
+						"4fc21fac-098b-4881-b368-9446831f7baf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Item",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/items/d4c5698f-8b81-4a9c-a8a8-187315b32994",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"items",
+						"d4c5698f-8b81-4a9c-a8a8-187315b32994"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Replac item",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/items/replacement-needed",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"items",
+						"replacement-needed"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "total investment",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "depreciate by id",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

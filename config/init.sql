@@ -1,0 +1,1 @@
+create database inventaris_db;
